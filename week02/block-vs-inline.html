@@ -15,25 +15,42 @@
             boundaries.</p>
 
         <h2>Task 1: Swap Block and Inline Elements</h2>
-        <div>In the HTML of this document, change this div element to a span element.</div>
+        <span>In the HTML of this document, change this div element to a span element.</span>
 
-        <p class="question">What happens to the layout? Does it still take up the full width?</p>
+        <p class="question">What happens to the layout? Does it still take up the full width? NO, IT DOES NOT TAKE UP
+            THE FULL WIDTH AGAIN; INSTEAD IT TAKES UN THE GIVEN SPACE BY THE "span tag" ONLY.</p>
 
         <h2>Task 2: Nesting Inline in Block</h2>
         <p>A paragraph &lt;p&gt; element (block) with a <span>&lt;span&gt; element;</span></p>
         <p class="question">Add another inline element like &lt;em&gt; or &lt;strong&gt; inside the paragraph. Observe
-            how it flows within the line.</p>
+            how it flows within the line. OBSERVATION: The "span tag" element tag inside the "p tag" block element
+            do not start on a new line, it only takes up the space given by the "span element" and aligned inside of the
+            "p tag" block level. Interestingly, the block element takes up the entire width of the screen while the
+            "span element" alings inside of it.
+        </p>
 
         <h2>Task3: Nesting Block in Inline</h2>
-        <span>Try placing a &lt;div&gt; inside a &lt;span&gt; element.</span>
-            <p class="question">What error or layout issue do you see? Why does this happen?</p>
+        <span>Try placing a <div> &lt;div&gt; inside a </div> &lt;span&gt; element.</span>
+        <p class="question">What error or layout issue do you see? Why does this happen? BECAUSE: a "div" is a block
+            level element and always start on a new line and takes on the entire width of the screen, so when a "div"
+            element is placed or nested inside an inline element-it starts on a new line and takes up full width of the
+            screen.</p>
 
 
-            <h2>Task 4: Review the HTML markup of the following Inline Elements</h2>
+        <h2>Task 4: Review the HTML markup of the following Inline Elements</h2>
         &lt;img&gt; element
         <img src="images/castle.webp" alt="placeholder image (images are inline)" width="300" height="300">
         <a href="https://churchofjesuschrist.org">&lt;a&gt; anchor element</a>
-        <button type="button">&lt;button&gt; element</button>
+        <button type="button">&lt;button&gt;</button>
+
+        <!-- added a span element tag for the response:  -->
+        <em> RESPONSE: THE (img, a, and button) ELEMENTS ARE INLINE BLOCK LEVEL ELEMENT
+            tags
+            THAT DO NOT START ON A NEW LINE INSTEAD THEY ONLY TAKE THE SPACE THEY ARE GIVEN BY THE TAGS. IN THIS CASE,
+            WE CAN CLEARLY SEE THAT
+            THEY ARE ALIGNED HORIZONTALLY, HOWEVER THE IMAGE ASSUMES TAKING THE FULL HEIGHT BY DEFAULT.</em>
+
+
     </main>
 </body>
 
