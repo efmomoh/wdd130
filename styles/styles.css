@@ -1,8 +1,8 @@
 :root {
     --darkblue-color: darkblue;
     --white-color: #fff;
-    --padding: 1.5rem;
-    --margin: 1.5rem;
+    --padding: 1.2rem;
+    --margin: 1.2rem;
     --height: auto;
     --align-text-center: center;
     --border: 1px solid #000;
@@ -31,18 +31,18 @@ p {
 }
 
 main {
-    max-width: 880px;
+    max-width: 840px;
 }
 
 main img {
     width: 150px;
     height: var(--height);
     border: var(--border);
-    padding: 5px;
+    padding: 2px;
     box-shadow: 0 0 30px gray;}
 
 aside {
-    width: 25rem;
+    width: 20rem;
     margin: var(--margin);
     padding: var(--padding);
     border: 1px solid rgb(0 0 0 / 0.2);
