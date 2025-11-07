@@ -1,6 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Roboto", Arial, sans-serif;
+}
+
 :root {
     --darkblue-color: darkblue;
     --white-color: #fff;
+    --black-color: #000;
     --padding: 1rem;
     --margin: 1rem;
     --height: auto;
@@ -23,15 +35,16 @@ nav a {
 
 h1 {
     color: var(--darkblue-color);
+    padding: .5rem;
 }
 
 p {
-    padding: 0;
+    margin: var(--margin);
     font-size: var(--text-font-size);
 }
 
 main {
-    max-width: 840px;
+    max-width: 640px;
 }
 
 main img {
@@ -39,18 +52,24 @@ main img {
     height: var(--height);
     border: var(--border);
     padding: 2px;
-    box-shadow: 0 0 30px gray;}
+    box-shadow: 0 0 30px gray;
+    float: right;
+    margin: 0 0 1em 1rem;
+}
+    
 
 aside {
     width: 20rem;
-    margin: var(--margin);
-    padding: var(--padding);
-    border: 1px solid rgb(0 0 0 / 0.2);
-    background-color: var(--background-color, #eee);
-    color: var(--text-color, #333);
     text-align: var(--align-text-center);
+    position: relative;
 }
 
+aside h2 {
+    position: absolute;
+    top: 17px;
+    left: 110px;
+  }
+  
 aside img {
     width: 200px;
     height: var(--height);
@@ -60,4 +79,18 @@ footer {
     margin-top: var(--margin);
     border-top: var(--border);
     text-align: var(--align-text-center);
+}
+
+/* Class Selectors */
+
+.box {
+    margin: var(--margin);
+    padding: var(--padding);
+    border: 1px solid rgb(0 0 0 / 10%);
+    background-color: #ddd;
+    color: var(--black-color);
+  }
+
+.indent {
+    padding-left: 2rem;
 }
