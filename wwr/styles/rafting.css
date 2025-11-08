@@ -3,10 +3,11 @@
     --secondary-color: #f4a261; /* warm sand */
     --accent1-color: #264653; /* dark slate blue */
     --accent2-color: #e9c46a; /* light golden yellow */
-    --heading-font: "Times New Roman", "Georgia", serif;
+    --heading-font: "Times New Roman", "Georgia", serif, sans-serif;
     --body-font: Arial, Helvetica, sans-serif;
     --align-text-center: center;
     --white-color: #fff;
+    --margin: 16px;
 }
 
 header {
@@ -28,19 +29,21 @@ body {
 header, main, footer {
     width: 840px;
     margin: 0 auto;
+    font-family: var(--heading-font);
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
-    background-color: var(--accent2-color);
+    background-color: var(--secondary-color);
     text-align: var(--align-text-center);
     color: var(--white-color);    
 }
 
 nav, p, article {
-    margin: 16px;
-    padding: 8px;    
+    margin: var(--margin);
+    padding: 1px;
+    font-size: 1.2rem;    
 }
 
 section {
@@ -52,16 +55,24 @@ section {
     text-decoration: none;
 }
 
-.hero {
-    position: relative;
-    
-}
-
 article {
     position: absolute;
-    top: 400px;
-    background-color: var(--accent2-color);
+    top: 380px;
+    color: var(--white-color);
+    background-color: var(--secondary-color);
+}
 
+.hero {
+    position: relative;
+}
+
+
+.hero h1 {
+    position: absolute;
+}
+
+.hero article {
+    position: absolute;
 }
 
 .hero img {
@@ -84,7 +95,7 @@ h1 {
 .hero article img {
     float: right;
     width: 125px;
-    border: 2px solid gold;
-    box-shadow: 0 0 10px gray;
-    margin: 0 0 1rem 1rem;
+    border: 3px solid gold;
+    box-shadow: 0 0 30px grey;
+    margin: var(--margin);
 }
