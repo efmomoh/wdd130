@@ -1,17 +1,16 @@
 :root {
     --primary-color: #fff;  /* white color */
-    --secondary-color: #f4a261; /* warm sand */
+    --secondary-color: #055a05; /* warm sand */
     --accent1-color: #264653; /* dark slate blue */
     --accent2-color: #e9c46a; /* light golden yellow */
-    --heading-font: "Times New Roman", "Georgia", serif, sans-serif;
+    --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
     --align-text-center: center;
     --margin: 16px;
-    --header-color: #055a05; /*forest green */
 }
 
 header {
-    background-color: var(--header-color);
+    background-color: var(--secondary-color);
     color: var(--accent2-color);
 }
 
