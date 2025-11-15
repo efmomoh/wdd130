@@ -160,13 +160,13 @@ h1 {
     margin: var(--margin);
 }
 
-figure {
+.figcaption-div {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 10px;
 }
 
-.figcaption-div {
+figure {
     display: grid;
     justify-content: center;
     margin-top: 1rem;
