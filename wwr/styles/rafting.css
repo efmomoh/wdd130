@@ -7,10 +7,6 @@
     --margin: 16px;
 }
 
-header {
-    background-color: var(--primary-color);
-}
-
 * {
     margin: 0;
     padding: 0;
@@ -64,6 +60,11 @@ nav ul li a {
     text-decoration: none;
     font-size: 1.5rem;
     padding: .2rem;
+    color: #0000ff;
+}
+
+a:hover {
+    color: #ff0000;
 }
 
 header, main, footer {
@@ -81,7 +82,7 @@ h1, h2 {
 nav, p, article {
     margin: var(--margin);
     padding: 1px;
-    font-size: 1rem; 
+    font-size: 16px; 
 }
 
 .grid-history {
@@ -94,7 +95,6 @@ nav, p, article {
      width: 200px;
      height: auto;
      align-self: center;
-     height: auto;
 } 
 
 section {
@@ -123,6 +123,8 @@ article {
     top: 380px;
     color: var(--primary-color);
     background-color: var(--accent1-color);
+    opacity: 0.7;
+
 }
 
 .hero {
