@@ -1,7 +1,8 @@
 :root {
     --primary-color: #fff;  /* white color */
     --accent1-color: #264653; /* dark slate blue */
-    --gold-color: #ffd700; /* gold color */
+    --box-shadow-color: #808080;
+    --background-color: #DCDCDC;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
     --align-text-center: center;
@@ -24,12 +25,14 @@ header {
     display: grid;
     grid-template-columns: 1fr 2fr;
     place-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    padding: 1rem;
 }
 
 .img-logo {
     grid-column-start: 1;
     grid-row-start: 1;
+    width: 100px;
     height: auto;
 }
 
@@ -37,21 +40,21 @@ header {
     grid-column-start: 1;
     grid-row-start: 1;
     font-weight: 600;
-    margin-top: 7rem;
+    margin-top: 6rem;
     font-size: 1rem;
 }
 
 nav {
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    flex-flow: row wrap;
+    justify-content: space-around;
     align-items: center;
 }
 
 nav ul{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-self: center;
     gap: 1rem;
     list-style-type: none;
@@ -65,8 +68,8 @@ nav ul li a {
 }
 
 a:hover {
-    color: var(--primary-color);
-    background-color: var(--gold-color);
+    color: var(--accent1-color);
+    background-color: var(--primary-color);
 }
 
 header, main, footer {
@@ -89,25 +92,26 @@ nav, p, article {
 
 .grid-history {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-columns: repeat(3, auto);
     grid-gap: 5px;
+    justify-content: center;
+    align-self: center;
 }
 
 .img-history {
-     width: 200px;
+     width: 180px;
      height: auto;
-     align-self: center;
+    place-self: center;
 } 
 
 section {
-    display: grid;
     margin: 16px 0 0;
     padding: 16px 0 0;
 }
 
 .socialmedia {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     align-self: center;
 }
 
@@ -126,7 +130,6 @@ article {
     color: var(--primary-color);
     background-color: var(--accent1-color);
     opacity: 0.7;
-
 }
 
 .hero {
@@ -158,19 +161,17 @@ h1 {
     float: right;
     width: 125px;
     border: 3px solid var(--gold-color);
-    box-shadow: 0 0 30px grey;
+    box-shadow: 0 0 30px var(--box-shadow-color);
     margin: var(--margin);
 }
 
 .figcaption-div {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(5, auto);
     grid-gap: 10px;
 }
 
 figure {
-    display: grid;
-    justify-content: center;
     margin-top: 1rem;
     padding: .3rem;
 }
@@ -188,16 +189,16 @@ figcaption {
 
 footer {
     display: grid;
-    grid-template-columns: 4fr 1fr;
+    grid-template-columns: auto auto;
 }
 
 footer, header {
-    background-color: rgb(236, 232, 232);
+    background-color: var(--background-color);
 }
 
 footer p {
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     font-size: 1rem;
     font-weight: 600;
 }
