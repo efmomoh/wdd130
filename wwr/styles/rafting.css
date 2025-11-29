@@ -78,10 +78,14 @@ header, main, footer {
     font-family: var(--heading-font);
 }
 
-.about-h1, h2 {
+.about-h1, h2 , .contact-h3 {
     font-family: var(--heading-font);
     color: var(--accent1-color);
     text-align: var(--align-text-center);
+}
+
+.contact-h3 {
+    font-size: 2rem;
 }
 
 nav, p, article {
