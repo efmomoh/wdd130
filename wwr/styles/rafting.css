@@ -184,6 +184,7 @@ article {
     margin: 0 0 1rem;
     width: 840px;
     padding: 1rem;
+    border: 1px solid #264653;
 }
 
 figure {
