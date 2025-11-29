@@ -33,9 +33,10 @@
     </header>
     <main>
         <!-- <div class="contact"> -->
+        <h1 class="contact-h1">California Whitewater Rafting</h1>
+
         <address>
 
-            <div class="title">California Whitewater Rafting</div>
 
             <div>123 Main River Stree </div>
 
@@ -67,13 +68,16 @@
                 </div><br>
                 <!-- message purpose  -->
                 <div>
-                    <label>Message Purpose</label>
+                    <label for="purpose">Message Purpose</label>
                     <div class="radio-group">
-                        <label for="purpose"><input type="radio" name="purpose" value="general" checked>General
+                        <label for="purpose"><input type="radio" name="purpose" id="purpose" value="general"
+                                checked>General
                             Inquary</label>
-                        <label for="purpose"><input type="radio" name="purpose" value="reservation" checked>Reservation
+                        <label for="purpose"><input type="radio" name="purpose" id="purpose" value="reservation"
+                                checked>Reservation
                             Question</label>
-                        <label for="purpose"><input type="radio" name="purpose" value="website" checked>Website
+                        <label for="purpose"><input type="radio" name="purpose" id="purpose" value="website"
+                                checked>Website
                             Suggestion</label>
                     </div>
                 </div>
@@ -84,7 +88,7 @@
 
                 <br>
                 <!-- checkedbox -->
-                <input class="box" type="checkbox" checked>
+                <input class="box" type="checkbox" name="checkbox" id="checkbox" checked>
 
                 <label for="checkedbox" class="checkedbox-row"> Please Subscribe me to the monthly
                     newsletter</label>
