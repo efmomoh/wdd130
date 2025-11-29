@@ -171,6 +171,17 @@ h1 {
     grid-gap: 10px;
 }
 
+.employee {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    justify-content: space-around;
+    background-color:  #e0e0e0;
+    margin: 0 0 1rem;
+    width: 840px;
+    padding: 1rem;
+}
+
 figure {
     margin-top: 1rem;
     padding: .3rem;
@@ -180,16 +191,33 @@ figure {
     width: 150px;
     height: auto;
 }
+
 figcaption {
     display: grid;
     justify-content: center;
-    font-size: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.employee img {
+    width: 150px;
+    height: auto;
+}
+
+.caption {
+    display: grid;
+    justify-content: center;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 footer {
     display: grid;
     grid-template-columns: auto auto;
+    border: 1px solid #808080;
+    margin: 0 0 1rem;
+
+
 }
 
 footer, header {
@@ -202,3 +230,96 @@ footer p {
     font-size: 1rem;
     font-weight: 600;
 }
+
+
+/* contact us  */
+address {
+    padding: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    font-size: 2rem;
+ font-family: Arial, sans-serif;
+ font-weight: 700;
+
+}
+
+form {
+    padding: .5rem;
+}
+
+.map-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-self: center;
+    background-color: #eee;
+    padding: 0;
+
+}
+
+input {
+    padding: .2rem;
+    font-size: 1.2rem;
+
+}
+
+label {
+    font-size: 1.5rem;
+    display: inline-flex;
+    grid-gap: 1rem;
+}
+ 
+.box {
+    margin-left: .3rem;
+}
+.map iframe {
+    width: 400px;
+    height: 430px; 
+}
+
+form div {
+    display: grid;
+    grid-template-columns: 1fr 2.8fr;
+    grid-gap: 5px;
+
+}
+
+form .radio-group {
+    display: flex;
+    flex-direction: column;
+}
+
+#message {
+    margin: .5rem 0 auto;
+    width: 400px;
+    padding: .1rem;
+    font-size: 1rem;
+
+}
+
+.checkedbox-row {
+    font-size: 1.2rem;
+    margin: 1rem auto;
+}
+
+
+button {
+    display:  block;
+    width: 400px;
+    margin-top: 1rem;
+    padding: .5rem;
+    font-size: 1.2rem;
+    background-color: green;
+    color: #fff;
+}
+
+button:hover,
+button:focus {
+    background-color: navy;
+    border-radius: 10px;
+}
+
