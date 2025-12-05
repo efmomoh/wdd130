@@ -146,6 +146,7 @@ nav, p, article {
 section {
     margin: 16px 0 0;
     padding: 16px 0 0;
+    width: 100%;
 }
 
 .socialmedia {
@@ -216,7 +217,7 @@ article {
     grid-gap: 10px;
     background-color:  #e0e0e0;
     margin: 0 0 1rem;
-    width: 840px;
+    width: 100%;
     padding: 1rem;
     border: 1px solid #264653;
 }
@@ -451,13 +452,14 @@ section .index-form-layout {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.main-index, .index-employee {
+.main-index {
     width: 100%;
     display: grid;
 }
 
 .index-employee .memory-index {
     width: 400px;
+    margin: 2rem;
 }
 
 form {
