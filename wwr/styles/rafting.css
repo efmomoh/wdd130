@@ -458,7 +458,8 @@ section .index-form-layout {
 }
 
 .index-employee .memory-index {
-    width: 400px;
+    max-width: 400px;
+    height: auto;
     margin: 2rem;
 }
 
@@ -596,7 +597,7 @@ label {
 }
 
 .index-image {
-    width: 400px;
+    max-width: 400px;
     height: 400px; 
 }
 
