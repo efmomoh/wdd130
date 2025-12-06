@@ -464,6 +464,7 @@ section .index-form-layout {
 
 .section-main-1, .section-main-2 {
     max-width: 100%;
+
 }
 
 .index-employee .memory-index {
@@ -474,7 +475,7 @@ section .index-form-layout {
 
 form {
     padding: 1rem;
-    margin-top: -1rem;
+    max-width: 40rem;
 }
 
 .index-h {
@@ -559,6 +560,7 @@ label {
     height: 300px;
     justify-content: center;
     opacity: 0.8;
+    
 }
 
 .index-section-layer div {
@@ -570,6 +572,7 @@ label {
     left: 40rem;
     max-width: 35rem;
     height: auto;
+    
 }
 
 .index-hp {
@@ -796,6 +799,8 @@ button:focus {
 .section-main-2 {
     padding: 60px 40px;
     background: #f5f7fa;
+    max-width: 100%;
+
 }
 
 .section-main-2 h2 {
@@ -808,15 +813,17 @@ button:focus {
 /* SINGLE GRID CONTAINER */
 .section-two-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* grid-template-rows: auto auto auto; */
-    gap: 5px;
-    align-items: start;
+    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 15px;
+    align-items: center;
+    max-width: 95rem;
+    margin: 0 auto;
 }
 
 /* FORM takes the FULL left column */
 .newsletter-card {
-    grid-row: span 3;
+    grid-row: span 1;
     background: white;
     padding: 30px;
     border-radius: 14px;
@@ -928,7 +935,7 @@ button:focus {
 .index-footer p,
 .index-footer a {
     color: #e8f1f2;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .index-footer a:hover {
