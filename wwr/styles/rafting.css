@@ -113,13 +113,13 @@ a:hover {
     text-align: var(--align-text-center);
 }
 
-.map-h2 {
+.map-h2, .about-h4 {
     font-size: 2rem;
     padding-bottom: 1rem;
     text-align: center;
 }
 
-.contact-h3, h3 {
+.contact-h3, h3, h2 {
     font-size: 2rem;
 }
 
@@ -145,7 +145,7 @@ nav, p, article {
 section {
     margin: 16px 0 0;
     padding: 16px 0 0;
-    width: 100%;
+    max-width: 100%;
 }
 
 .container-form-sec {
@@ -467,7 +467,7 @@ section .index-form-layout {
 }
 
 .index-employee .memory-index {
-    max-width: 100px;
+    max-width: 25px;
     height: auto;
     margin: 2rem;
 }
@@ -550,12 +550,13 @@ label {
     display: flex;
    flex-shrink: 1;
     align-items: center;
-    width: 100%;
+    max-width: 100%;
+    height: 400px;
 }
 
 .index-section-layer img {
-    width: 840px;
-    height: 400px;
+    max-width: 700px;
+    height: 300px;
     justify-content: center;
     opacity: 0.8;
 }
@@ -567,7 +568,8 @@ label {
     padding: 1rem;
     float: right;
     left: 40rem;
-    max-width: 840px;
+    max-width: 35rem;
+    height: auto;
 }
 
 .index-hp {
@@ -694,10 +696,11 @@ button:focus {
 }
 .index-btn {
     text-align: center;
-    margin-left: 20rem;
+    margin-left: 10rem;
     color: #000;
     background-color: hsl(34, 44%, 80%);
     max-width: 10rem;
+    opacity: 0.8;
   }
 
   .index-btn:hover {
@@ -738,6 +741,7 @@ button:focus {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
     padding: 20px;
+    max-width: 100%;
 }
 
 /* SECTION TWO GRIDS */
@@ -761,7 +765,7 @@ button:focus {
 
 .grid-two-images {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
     gap: 20px;
 }
 
