@@ -515,9 +515,9 @@ form p, .map p {
     background-color: #eee;
 }
 
-.index-form {
-    /* padding-left: 2rem; */
-}
+/* .index-form {
+    padding-left: 12rem;
+} */
 
 .index-form-title {
     display: flex;
