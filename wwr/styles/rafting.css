@@ -610,7 +610,8 @@ label {
 
 .map iframe {
     width: 400px;
-    height: 430px; 
+    height: 430px;
+    border: 0;
 }
 
 .trips-image {
