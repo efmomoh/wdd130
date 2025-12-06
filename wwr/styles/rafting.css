@@ -489,6 +489,14 @@ form {
     text-align: center;
     padding: 0.8rem;
 }
+
+.index-h6  {
+    position: relative;
+    text-align: center;
+    color: #0c2d48;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
 form p, .map p {
     font-size: 1.2rem;
     line-height: 1.5rem;
@@ -704,6 +712,8 @@ button:focus {
     background-color: hsl(34, 44%, 80%);
     max-width: 10rem;
     opacity: 0.8;
+    font-size: 1.5rem;
+
   }
 
   .index-btn:hover {
@@ -865,17 +875,19 @@ button:focus {
 
 /* BUTTON */
 .newsletter-card button {
-    padding: 12px;
+    padding: 1.2rem;
     width: 100%;
     background: #0b3d91;
     color: white;
     border-radius: 8px;
     border: none;
     cursor: pointer;
+    letter-spacing: 0.3rem;
+    font-weight: 700;
 }
 
 .newsletter-card button:hover {
-    background: #09326f;
+    background: #006400;
 }
 
 /* IMAGE CARDS (right column) */
