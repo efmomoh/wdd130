@@ -101,7 +101,7 @@ a:hover {
     color: darkblue;
 }
 
-.about-header, .contact-header, main, footer {
+.about-header, .contact-header, .contact-main, .about-main, .trips-main, footer {
     width: 840px;
     margin: 0 auto;
     font-family: var(--heading-font);
@@ -120,7 +120,7 @@ a:hover {
 }
 
 .contact-h3, h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 nav, p, article {
@@ -147,6 +147,16 @@ section {
     margin: 16px 0 0;
     padding: 16px 0 0;
     width: 100%;
+}
+
+.container-form-sec {
+    display: grid;
+}
+
+.main-width {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .socialmedia {
@@ -182,7 +192,7 @@ article {
 
 .hero img {
     display: block;
-    width: 100%;
+    max-width: 100%;
     height: auto;
 }
 
@@ -217,14 +227,14 @@ article {
     grid-gap: 10px;
     background-color:  #e0e0e0;
     margin: 0 0 1rem;
-    width: 100%;
+    /* width: 100%; */
     padding: 1rem;
     border: 1px solid #264653;
 }
 
 .table-container {
     display: grid;
-    width: 840px;
+    /* width: 840px; */
     margin: 4rem 0;
 }
 
@@ -452,9 +462,9 @@ section .index-form-layout {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.main-index {
-    width: 100%;
-    display: grid;
+.main-index, .main-width {
+    max-width: 100%;
+    opacity: 1;
 }
 
 .index-employee .memory-index {
@@ -469,17 +479,17 @@ form {
 }
 
 form h2, h4, .map h4{
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: left;
 }
 
 .map h4, h4 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
 }
 
 .map-h4, .map-h5, .map-h6 {
-    font-size: 2rem;
+    font-size: 1.5em;
     text-align: center;
     padding: 0.8rem;
 }
@@ -506,8 +516,7 @@ form p, .map p {
 }
 
 .index-form {
-    display: grid;
-    padding-left: 5rem;
+    /* padding-left: 2rem; */
 }
 
 .index-form-title {
