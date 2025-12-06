@@ -478,7 +478,7 @@ form {
     max-width: 40rem;
 }
 
-.index-h {
+.index-h, .h4-index {
     font-size: 1.5rem;
     padding: 0.5rem;
     text-align: center;
@@ -809,7 +809,8 @@ button:focus {
 .section-main-2 {
     padding: 60px 40px;
     background: #f5f7fa;
-    max-width: 100%;
+    max-width: 100rem;
+    margin: 0 auto;
 
 }
 
@@ -827,8 +828,8 @@ button:focus {
     grid-template-rows: auto auto auto;
     gap: 15px;
     align-items: center;
-    max-width: 95rem;
-    margin: 0 auto;
+    max-width: 400px;
+    /* margin: 0 auto; */
 }
 
 /* FORM takes the FULL left column */
