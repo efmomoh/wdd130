@@ -809,7 +809,7 @@ button:focus {
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr;
     grid-template-rows: auto auto auto;
-    gap: 25px;
+    gap: 5px;
     align-items: start;
 }
 
@@ -878,6 +878,8 @@ button:focus {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     border: 1px solid #e5e7eb;
     transition: 0.3s ease;
+    max-width: 40rem;
+    height: 30rem;
 }
 
 .map:hover {
@@ -885,8 +887,8 @@ button:focus {
 }
 
 .index-image {
-    width: 40rem;
-    height: auto;
+    width: 38rem;
+    height: 24rem;
     object-fit: cover;
     border-radius: 10px;
 }
