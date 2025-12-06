@@ -750,6 +750,7 @@ button:focus {
     grid-template-columns: 1fr 2fr;
     gap: 40px;
     padding: 20px;
+
 }
 
 .form-grid {
@@ -807,7 +808,7 @@ button:focus {
 /* SINGLE GRID CONTAINER */
 .section-two-grid {
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto auto auto;
     gap: 5px;
     align-items: start;
@@ -878,8 +879,8 @@ button:focus {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     border: 1px solid #e5e7eb;
     transition: 0.3s ease;
-    max-width: 40rem;
-    height: 30rem;
+    max-width: 27rem;
+    height: auto;
 }
 
 .map:hover {
@@ -887,8 +888,8 @@ button:focus {
 }
 
 .index-image {
-    width: 38rem;
-    height: 24rem;
+    width: 25rem;
+    height: 25rem;
     object-fit: cover;
     border-radius: 10px;
 }
