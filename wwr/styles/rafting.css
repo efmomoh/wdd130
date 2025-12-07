@@ -485,7 +485,7 @@ form {
 }
 
 .index-h, .h4-index {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 0.5rem;
     text-align: center;
 }
@@ -503,8 +503,8 @@ form {
     font-size: 2rem;
     padding: 0.5rem;
 }
-form p, .map p {
-    font-size: 1.2rem;
+form p, .map p, .desc {
+    font-size: 1.5rem;
     line-height: 1.5rem;
     text-align: center;
 }
@@ -909,7 +909,7 @@ button:focus {
     box-shadow: 0 4px 15px rgba(0,0,0,0.1);
     border: 1px solid #e5e7eb;
     transition: 0.3s ease;
-    max-width: 27rem;
+    max-width: 450px;
     height: auto;
 }
 
@@ -918,8 +918,8 @@ button:focus {
 }
 
 .index-image {
-    width: 25rem;
-    height: 25rem;
+    width: 400px;
+    height: 400px;
     object-fit: cover;
     border-radius: 10px;
 }
