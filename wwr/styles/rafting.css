@@ -124,10 +124,14 @@ a:hover {
 .contact-h3, h3, h2 {
     font-size: 2rem;
 }
-
-nav, p, article {
+nav {
     margin: var(--margin);
+
+}
+nav, p, article {
     font-size: 18px; 
+    padding: 0 10px 10px 10px ;
+    text-align: justify;
 }
 
 .grid-history {
@@ -141,7 +145,7 @@ nav, p, article {
 .img-history {
      max-width: 250px;
      height: 300px;
-    place-self: center;
+    /* place-self: center; */
 } 
 
 section {
