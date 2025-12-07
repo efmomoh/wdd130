@@ -145,9 +145,7 @@ nav, p, article {
 .img-history {
      max-width: 250px;
     margin: var(--margin);
-    align-self: center;
      height: 250px;
-    /* place-self: center; */
 } 
 
 section {
