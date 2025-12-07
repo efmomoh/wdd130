@@ -924,3 +924,95 @@ button:focus {
     border-radius: 10px;
 }
 
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .section-two-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+
+    .newsletter-card {
+        grid-row: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* FOOTER BASE */
+.index-footer {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 1.5rem 2rem;
+    background: #0c2d48;
+    color: #fff;
+    text-align: center;
+}
+
+/* Text + Links */
+.index-footer p,
+.index-footer a {
+    color: #e8f1f2;
+    font-size: 1.5rem;
+}
+
+.index-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Social icons */
+.index-social {
+    display: flex;
+    gap: 1rem;
+}
+
+.index-social img {
+    width: 28px;
+    height: 28px;
+    transition: transform 0.3s ease;
+}
+
+.index-social img:hover {
+    transform: scale(1.15);
+}
+
+/* RESPONSIVE BREAKS */
+
+/* Tablet Layout */
+@media (max-width: 800px) {
+    .index-footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .index-social {
+        justify-content: center;
+        grid-column: span 2;
+    }
+}
+
+/* Mobile  — Stack Everything */
+@media (max-width: 500px) {
+    .index-footer {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .index-footer a {
+        display: block;  
+        margin: 0.2rem 0;
+    }
+
+    .index-social {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+}
+
+}
+/* THE END  */
