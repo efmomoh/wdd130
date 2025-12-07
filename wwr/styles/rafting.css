@@ -687,18 +687,21 @@ button {
 }
 
 .trip-btn {
-   width: 70%;
-   padding: 0.8rem;
+   width: 200%;
+   padding: 1rem;
    border-radius: 50px;
-}
-
-.trip-btn a {
-    font-size: 1.5rem;
+   font-size: 1.5rem;
+   background-color: #006400;
    color: #fff;
+  
    text-decoration: none; 
+    margin: 0 auto;
+   text-align: center;
+
 }
 
-.trip-btn a:hover {
+.trip-btn:hover {
+    background-color: #0a4fa3;
     color: #fff;
 }
 
