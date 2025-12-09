@@ -30,7 +30,29 @@ body {
 }
 
 .index-container {
+    position: relative;
+    height: 100vh;
     background-image: url("../images/rafting27_1024.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    /* Center children */
+    display: flex;
+    flex-direction: column;
+    align-items: center;       
+}
+
+.book {
+    position: absolute;
+    text-align: center;
+    padding: 1.5rem;
+    justify-self: center;
+    top: 8rem;
+}
+
+.hero-back-ground-image {
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -38,9 +60,10 @@ body {
 }
 
 .index-header {
-    display: grid;
+    /* display: grid; */
     width: 100%;
     height: auto;
+    position: fixed;
 }
 
 .index-header .nav-index ul li {
@@ -443,12 +466,7 @@ section .index-form-layout {
     font-weight: 700;
 }
 
-.book {
-    position: absolute;
-    text-align: center;
-    padding: 1.5rem;
-    justify-self: center;
-}
+
 
 .index-h2 {
     font-size: 2.5rem;
@@ -540,7 +558,8 @@ form p, .map p, .desc {
     border: 1px solid rgb(0 0 0 / 0.2);
     letter-spacing: 0.1em;
     font-family: Arial, Helvetica, sans-serif;
-    color: #000;
+    color: #0a4fa3;
+
 }
 
 .index-form .index-input {
@@ -565,35 +584,6 @@ label {
     font-size: 2rem;
     font-weight: 600;
     font-style: italic;
-}
-
-.index-section-layer {
-    background-color: hsl(34, 44%, 80%);
-    display: flex;
-   flex-shrink: 1;
-    align-items: center;
-    max-width: 100%;
-    height: 400px;
-}
-
-.index-section-layer img {
-    max-width: 700px;
-    height: 300px;
-    justify-content: center;
-    opacity: 0.8;
-    
-}
-
-.index-section-layer div {
-    position: absolute;
-    background-color: #264653;
-    opacity: 0.9;
-    padding: 1rem;
-    float: right;
-    left: 40rem;
-    max-width: 35rem;
-    height: auto;
-    
 }
 
 .index-hp {
@@ -788,11 +778,11 @@ button:focus {
 
 }
 
-.form-grid {
+/* .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 15px;
-}
+} */
 
 .form-grid div {
     display: flex;
@@ -812,7 +802,29 @@ button:focus {
     align-items: center;
     gap: 20px;
     padding: 2rem 20rem 2rem;
+    background-color: hsl(34, 44%, 80%);
+    max-width: 100%;
+    height: 400px;
+}
 
+.index-section-layer img {
+    max-width: 700px;
+    height: 300px;
+    justify-content: center;
+    opacity: 0.8;
+    
+}
+
+.index-section-layer div {
+    position: absolute;
+    background-color: #264653;
+    opacity: 0.9;
+    padding: 1rem;
+    float: right;
+    left: 40rem;
+    max-width: 35rem;
+    height: auto;
+    
 }
 
 /* Responsive */
@@ -864,18 +876,12 @@ button:focus {
     max-width: 600px;
 }
 
-/* FORM TITLE */
-.index-form-title {
-    text-align: center;
-    font-size: 1.3rem;
-    color: #0a4fa3;
-}
 
 /* FORM GRID */
 .form-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 18px 25px;
+    gap: 25px;
 }
 
 .form-grid input[type="text"] {
